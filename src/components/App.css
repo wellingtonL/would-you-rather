@@ -1,0 +1,101 @@
+.App {
+  padding-top: 40px;
+  font-size: bold 60em 'Source Sans Pro', sans-serif; 
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 10vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* question*/
+.textarea {
+  align-items: center;
+  background-color: LightBlue; 
+  width: 600px;
+  height: 70px;
+}
+/* score */
+.ScoreContainer {
+ min-height: 90vmin;
+ background-color: LightBlue;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ align-content: space-between;
+
+}
+
+
+/* nav */
+.navList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.navBtn {
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 25%;
+  font: bold 1em 'Source Sans Pro', sans-serif;
+  justify-content: center;
+  margin: 5px 5px 0 5px;
+  min-height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.active-link {
+  color: #33FF63;
+  justify-content: space-between;
+}
+
+.navlink {
+  align-self: center;
+  color: #fff;
+  text-decoration: none;
+}
+.homeNav {
+ background-color: #e9b000;
+}
+
+.newQuestNav {
+ background-color: #008f95;
+}
+
+.leaderNav {
+ background-color: #1a4863;
+}
+
+.avatarNav {
+ background-color: #e24e42;
+}
+.navBtn:hover {
+  font-weight: normal;
+}
