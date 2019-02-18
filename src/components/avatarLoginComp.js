@@ -1,13 +1,10 @@
 import React from 'react';
-
+export avatarLoginComp from '../components/avatarLoginComp'
 import { connect } from 'react-redux';
-//import {Button,Card,CardBody,CardFooter,CardSubtitle,CardTitle,Form,Input} from "reactstrap";
+import {Form, Card, CardBody, CardFooter, Button, Input} from "reactstrap";
 import { loginUser } from '../actions/authedUser';
 import {saveUser, loadUsers} from '../utils/_DATA.js'; 
 //import { routes } from "../utils";
-import {Form, Card, CardBody, CardFooter, Button, Input} from "reactstrap";
-
-
 
 
 class avatarLoginComp extends React.Component {
@@ -49,7 +46,7 @@ class avatarLoginComp extends React.Component {
             <span>Sign In</span>
             <Input
               type="select"
-              placeholder="Select Username"
+              placeholder="Username"
               ref="currentUser"
               id="currentUser"
             >
@@ -80,8 +77,5 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(avatarLoginComp);
+export default connect(mapStateToProps, mapDispatchToProps)(avatarLoginComp);
 
