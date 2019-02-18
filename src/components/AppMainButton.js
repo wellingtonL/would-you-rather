@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
-export const AppMainButton = props => {
+const AppMainButton = props => {
   return (
     <Link to={props.to}>
       <Button

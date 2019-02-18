@@ -1,12 +1,13 @@
 import React from 'react';
 import {connect} from "react-redux";
+
 import {handleSaveQuestion} from "../actions/shared";
 import {input, Card, CardBody,CardFooter} from 'reactstrap';
 import avatar from './avatar';
 //import {routes} from "../utils";
 
 
-export default class addQuestionComp extends React.Component {
+class addQuestionComp extends React.Component {
 	constructor (props) {
 		super (props);
 		this.submitArticle=this.submitArticle.bind(this);
@@ -71,3 +72,4 @@ export default class addQuestionComp extends React.Component {
 		);
 	}
 }
+export default addQuestionComp;

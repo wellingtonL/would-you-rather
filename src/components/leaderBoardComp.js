@@ -2,17 +2,11 @@ import React from 'react';
 import { connect } from "react-redux";
 import {_getQuestions} from '../utils/_DATA.js'
 import {answers} from '../utils/_DATA.js'
-//import {questions} from '../utils/_DATA.js'
 import avatar from'./avatar';
 import { Container, Row, Col, Card, CardTitle, CardBody } from "reactstrap"
-//export  DATA from '../utils/_DATA.js'
-//import * as DATA from '../utils/api.js'
-export {_getQuestions} from '../utils/_DATA.js' 
 
 
-
-
-export const leaderBoardComp = props => {
+ const leaderBoardComp = props => {
 	//let answers= user.answers.optionOne.text + user.answers.optionTwo.text;
 	//let _getQuestions = user.questions.optionOne.text + user.questions.optionTwo.text;
 	const questionData = _getQuestions();

@@ -13,7 +13,7 @@ import {Button} from "reactstrap";
 import AppMainButton from './AppMainButton';
 //import image from './pictures/images.js';
 
-function HomeComp() {
+function MainAppPage() {
 return (
   <div>
   <h1>WOULD YOU RATHER APP</h1>
@@ -81,4 +81,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(MainAppPage);

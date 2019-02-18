@@ -1,7 +1,7 @@
 import React from 'react';
 import {users} from '../utils/_DATA.js';
 
-export const avatar = props => {
+const avatar = props => {
   const { avatarURL, image, name, big} = props;
   return (
     <img
