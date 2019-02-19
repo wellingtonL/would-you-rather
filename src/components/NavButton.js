@@ -6,7 +6,7 @@
 
 export const NavButton = props => {
 
-    const { login,LogoutUser } = props;
+    const { login,LoginUser } = props;
   return (
     
       <button id="buttonId">Login</button>
