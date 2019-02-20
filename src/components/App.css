@@ -99,3 +99,68 @@
 .navBtn:hover {
   font-weight: normal;
 }
+
+.questionText {
+  border-radius: 10px;
+  display: flex;
+  margin: 5px;
+  min-height: 500px;  
+  }
+
+  /* nav */
+.navList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.navBtn {
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 25%;
+  font: bold 1em 'Source Sans Pro', sans-serif;
+  justify-content: center;
+  margin: 5px 5px 0 5px;
+  min-height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.navlink {
+  align-self: center;
+  color: #fff;
+  text-decoration: none;
+}
+.unansweredNav,
+.unanswered {
+  background-color: #e9b000;
+}
+
+.answeredNav,
+.answered {
+  background-color: #008f95;
+}
+
+.leaderNav,
+.leader {
+  background-color: #1a4863;
+}
+
+.addNav,
+.add {
+  background-color: #e24e42;
+}
+.navBtn:hover {
+  font-weight: normal;
+}
+
+.current {
+  font-style: italic;
+}
+.questionText {
+  border-radius: 10px;
+  display: flex;
+  margin: 5px;
+  min-height: 500px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-export avatarLoginComp from '../components/avatarLoginComp'
+
 import { connect } from 'react-redux';
 import {Form, Card, CardBody, CardFooter, Button, Input} from "reactstrap";
 import { loginUser } from '../actions/authedUser';

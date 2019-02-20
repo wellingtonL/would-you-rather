@@ -1,4 +1,5 @@
 import * as DATA from '../utils/_DATA.js';
+export {_getQuestions} from '../utils/api';
 
 export const getUsers = async () => {
   const userData = await DATA._getUsers();

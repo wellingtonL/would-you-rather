@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from "react-redux";
-
 import {handleSaveQuestion} from "../actions/shared";
 import {input, Card, CardBody,CardFooter} from 'reactstrap';
 import avatar from './avatar';
@@ -26,10 +25,10 @@ class addQuestionComp extends React.Component {
 		return (
 
 		<article class='addNewQuestions'>
-	    <h2>Create New Question Page</h2>
+	    <h2>Add New Question</h2>
 	     
 
-	     <article class='addNewQuestions'>
+	     <article class='addQuestions'>
 	     <p> Complete the questions</p>
 	     <h4>Would you rather ? </h4>
 	     </article>
@@ -51,7 +50,7 @@ class addQuestionComp extends React.Component {
 	     <CardFooter>
 	     <p className='asked'> asked by
 	    
-	     <br /> {author}
+	     <br /> {author.name}
 	     </p>
 	    
 

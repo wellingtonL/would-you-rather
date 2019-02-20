@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import  './App.css';
 import {HashRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
+import HomeComp from './HomeComp.js';
 import addQuestionComp from './addQuestionComp.js';
 import leaderBoardComp from './leaderBoardComp.js';
 import avatarURL from '../utils/_DATA.js';

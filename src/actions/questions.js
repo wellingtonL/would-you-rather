@@ -17,11 +17,16 @@ export const addQuestion = question => {
     question
   };
 };
-export const loadQuestions = questions => {
-  return {
-    type: LOAD_QUESTIONS,
-    questions
-
+export const loadQuestions = () => {
+    // type: LOAD_QUESTIONS,
+    //questions
+return dispatch => {
+    return _getQuestions().then(response => {
+      // convert questions to array
+      const qIndices = Object.keys(response);
+      const questions = qIndices.map(index => response[index]);
+      dispatch(getQuestions(questions));
+    });
   };
 };
 export const handleLoadQuestions = () => {
