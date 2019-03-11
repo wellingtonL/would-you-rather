@@ -31,12 +31,10 @@ class QuestionsPage extends Component {
     });
   }
 
-  render() {
+  render() {  
     const { questions, users, currentUser } = this.props;
     const { loading } = this.state;
-    
-    }
-    if (error) {
+     if (this .state.error) {
       return <avatarLoginComp />;
     }
     
